@@ -1,4 +1,6 @@
-/* font-family: 'League Spartan', sans-serif; */
+* {
+    font-family: 'League Spartan', sans-serif; 
+}
 
 #achievements {
     height:100px;
