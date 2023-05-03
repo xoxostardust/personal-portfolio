@@ -3,6 +3,10 @@
     background-color: #F6DDE0;
 }
 
+.selected-page {
+    font-weight:600;
+}
+
 #achievements {
     height:100px;
     overflow-y:auto;
@@ -39,42 +43,55 @@
     }
 
     .original {
-        width:80%;
-        align-items: center;
-        justify-content: space-between;
+        width:100%;
+        justify-content: space-around;
         display:flex;
-
     }
 
-    .header-flex {
-        width:40%;
-        align-items: center;
+    #head-1 {
+        width:50%;
+    }
+
+    #head-2  {
+        width:20%;
+        text-align: left;
     }
 
     .middle-flex {
         flex-direction: row;
         display:flex;
+        width:100%;
+        
     }
 
     .middle {
         width:100%;
         display:flex;
-        flex-direction: column;   
+        flex-direction: column;
+        align-items: center;
+        
     }
 
-    .middle {
-        width:75%;
-    }
-    
+
     .thirds {
-        width:60%;
-        margin:50px;
-        justify-content: space-between;
+        width:100%;
+        display:flex;
+        justify-content: space-around;
+        /* justify-content: space-between; */
         font-size:60px;
         color:#6E5B48;
+        
+    }
+
+    .thirds > h3 {
+        display:inline-block;
     }
 
     .thirds h3 {
         font-weight:400;
+    }
+
+    .stats img {
+        height:100px;
     }
 }
