@@ -1,5 +1,6 @@
 * {
     font-family: 'League Spartan', sans-serif; 
+    box-sizing:border-box;
 }
 
 body {
@@ -148,11 +149,10 @@ body {
         justify-content: space-around;
     }
 
-    .stats img {
-        aspect-ratio: 1:1;  
-        height:30px;
+    .stats img { 
+        height:40px;
         text-align:right;
-        width:10%;
+        width: 10%;
     }
 
     .hearts {
@@ -189,8 +189,9 @@ body {
         flex-direction: row;
         line-height: 150%;
         margin-top:50px;
+        height:fit-content;
         background: rgb(241,158,160);
-        background: linear-gradient(180deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 100%);
+        background: linear-gradient(0deg, rgba(241,158,160,1) 60%, rgba(246,221,224,1) 100%);
         color:black;
         
     }
@@ -198,6 +199,8 @@ body {
     .footer-left {
         width:50%;
         height:200px;
+        margin-bottom:100px;
+        margin-top:100px;
     }
 
     .footer-right {
@@ -205,6 +208,8 @@ body {
         font-size:20px;
         line-height: 150%;
         text-align:right;
+        margin-bottom:100px;
+        margin-top:100px;
     }
 
     footer li,
@@ -214,4 +219,80 @@ body {
         list-style-type: none;
         font-size:20px;
     }
+
+    .slider-info {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        overflow:hidden;
+        height:150px;
+    }
+
+    .slider-info img {
+        display:none;
+    }
+
+    .slider-info h3 {
+        text-align: center;
+    }
+
+    .dot {
+        background-color: hotpink;
+        padding:8px;
+        border-radius: 50%;
+        margin:10px;
+    }
+
+    #link {
+        display:flex;
+        flex-direction: column;
+        font-size:24px;
+        text-align: center;
+    }
+
+    .letters {
+        display:flex;
+        margin-top:200px;
+        flex-direction: row;
+        width:100%;
+        justify-content: space-around;
+    }
+
+    .letters-text {
+        text-align:center;
+        font-size:24px;
+        margin-bottom:200px;
+    }
+
+    .resume {
+        color:#6E5B48;
+        text-align: left;
+        width:100%;
+        margin-left:200px;
+    }
+
+    .resume h1 {
+        font-size:50px;
+    }
+
+    .resume h2 {
+        font-weight:600;
+    }
+
+    .resume li {
+        font-size:20px;
+    }
+
+    .head {
+        display:flex;
+        width:100%;
+        flex-direction: row;
+    }
+
+    .head-text,
+    .color-bg {
+        width:50%;
+    }
 }
+
