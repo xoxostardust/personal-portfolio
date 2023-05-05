@@ -17,7 +17,7 @@ body {
     overflow-y:auto;
 }
 
-@media (min-width:960px) {
+@media (min-width:1024px) {
     .fox {
         height:100px;
     }
@@ -344,22 +344,124 @@ body {
         font-size:26px;
         background-color:#EBADB2;
         border: 5px solid white;
-        border-radius:5%;
+        border-radius:2%;
     }
 
     #submit {
         padding-bottom:20px;
         background-color:#C77A80;
         border: 5px solid white;
-        border-radius:5%;
         color:white;
         width:25%;
+        padding:25px;
         font-size:26px;
+    }
+
+    .socials a {
+        margin-top: 100px;
+    }
+
+    .socials img {
+        max-width:100%;
+        height: 200px;
+    }
+
+    .socials {
+        display:flex;
+        justify-content: space-around;
     }
 
     #submit p {
         text-align:center;
-        padding:5px;
     }
+
+    ::placeholder {
+        color:white;
+    }
+
+    .frame {
+    background-color: #EBADB2;
+    border:5px solid white;
+    border-radius: 25px;
+    height: 500px;
+    align-items: center;
+    width: 40%;
+    
+    display:flex;
+    justify-content: center;
+}
+
+.frame {
+    margin-top:200px;
+}
+
+.sample {
+    animation: scroll 20s linear infinite;
+    display:flex;
+    margin-right:50px;
+    width:1200px;
+}
+
+
+@keyframes scroll {
+    100% { 
+        transform: translateX(-318%); 
+    }
+}
+
+ 
+
+    #web img {
+        height:400px;
+        width:800px;
+    }
+
+    #writing img {
+        height:600px;
+        width:500px;
+    }
+
+    #art img {
+        width:500px;
+        height:400px;
+    }
+
+    .carousel {
+        text-align: center;
+        display:flex;
+        overflow:hidden;
+        position:relative;
+        width: 800px;
+        height:400px;
+        align-items: center; 
+      }
+
+      .carousel-1 {
+        text-align: center;
+        display:flex;
+        overflow:hidden;
+        position:relative;
+        width: 800px;
+        height:400px;
+        align-items: center;
+        
+      }
+
+      .portfolio p,
+      .portfolio h2 {
+        font-weight:500;
+      }
+
+      
+
+      .portfolio {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color:#6E5B48;
+      }
 }
 
