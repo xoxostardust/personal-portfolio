@@ -21,9 +21,16 @@ body {
         display:grid;
         margin-bottom: 200px;
     }
-
+    
     .achaward {
         width:100%;
+    }
+
+    .achaward h2 {
+      text-align: center;
+      font-size:45px;
+      color:#6E5B48;
+      font-weight:400;
     }
 
     .fox {
@@ -405,26 +412,43 @@ body {
 }
 
 .sample {
-    animation: scroll 20s linear infinite;
+    animation: web-scroll 20s linear infinite;
     display:flex;
     margin-right:50px;
     width:1200px;
 }
 
-#write {
-    animation: scroller 2.5s linear infinite;
+.write {
+    animation: write-scroll 10s linear infinite;
+    display:flex;
+    margin-right:50px;
+    width:1200px;
 }
 
-@keyframes scroller {
+  .art {
+    display:flex;
+    justify-content: space-between;
+    width:1200px;
+    margin-right:50px;
+    animation: art-scroll 8s linear infinite;
+}
+
+@keyframes write-scroll {
     100% { 
-        transform: translateX(-125%); 
+        transform: translateX(-220%); 
     }
 }
 
-@keyframes scroll {
+@keyframes web-scroll {
     100% { 
         transform: translateX(-318%); 
     }
+}
+
+@keyframes art-scroll {
+  100% { 
+      transform: translateX(-219.9%); 
+  }
 }
 
  
@@ -439,14 +463,9 @@ body {
         width:500px;
     }
 
-    #art img {
-        width:600px;
-        height:400px;
-    }
-
-    #art-2 img {
+    .art img {
         width:500px;
-        height:500px;
+        height:450px;
     }
 
     .carousel {
@@ -473,6 +492,16 @@ body {
       .portfolio p,
       .portfolio h2 {
         font-weight:500;
+      }
+
+      .portfolio h2 {
+        font-size:45px;
+      }
+
+      .portfolio p {
+        font-size:24px;
+        width:50%;
+        text-align: left;
       }
 
       
@@ -636,21 +665,21 @@ body {
         font-size:30px;
       }
 
-      .img {
-        height:100px;
-      }
-
       .grid-2 {
         /* display:grid; */
         margin-bottom: 100px;
-        margin:25px;
+        width:100%;
         grid-template-rows: 400px;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 25% 50%;
         font-size:30px;
+        display:flex;
+        justify-content: center;
       }
 
       .grid-2 img {
-        height:100px;
+        height:125px;
+        margin-bottom:25px;
+        text-align: center;
       }
 
       .bold {
@@ -658,13 +687,24 @@ body {
         font-size:22px;
       }
 
+      #g1,
+      #g3,
+      #g5,
+      #g7,
+      #g9,
+      #g12 {
+        text-align:right;
+        margin-right: 50px;
+      }
+
+
       .scroll {
         color:white;
         list-style: none;
         border: 4.5px solid white;
         border-radius: 15px;
         padding:10px;
-        background-color:#C77A80;
+        background-color:#EAAEB5;
       }
 
       #g0 {
@@ -759,6 +799,176 @@ body {
         grid-row-end:7;
         grid-column-start: 1;
         grid-column-end: 2;
+      }
+
+      .scroll {
+        margin-bottom: 25px;
+      }
+
+      .postsec {
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        padding:50px;
+      }
+
+      #psimg {
+        width:50%;
+      }
+
+      #pstext {
+        width:50%;
+        font-weight:400;
+        color:#6E5B48;
+        font-size:25px;
+      }
+
+      .divider {
+        background-color: #EAAEB5;
+      border: 5px solid white;
+      margin:50px;
+      border-radius: 20px;
+      color: white;
+      width: 40%;
+      height:100px;
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 25px;
+      font-size: 26px;
+      }
+
+      #pstext h2 {
+        font-weight:400;
+        font-size:45px;
+      }
+
+      .web-grid {
+        display:grid;
+        /* margin-top:150px; */
+        width:100%;
+        grid-template-rows: 400px;
+        grid-template-columns: 25% 15% 60%;
+      }
+
+
+      #w1 {
+        grid-row-start:1;
+        grid-row-end:1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .heart-divider {
+        grid-row-start:1;
+        display:flex;
+        justify-content: center;
+        /* width:15%; */
+        grid-row-end:9;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-left: 9px solid #000000;
+        height: 1000px;
+        width: 0%;
+      }
+
+      .heart-divider img {
+        height:125px;
+        position:fixed;
+      }
+
+      #w5 {
+        grid-row-start:2;
+        grid-row-end:2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        
+      }
+
+      #w8 {
+        grid-row-start:3;
+        grid-row-end:3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      #w11 {
+        grid-row-start:4;
+        grid-row-end:4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      .web-1 {
+        display:flex;
+        
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        grid-row-start:1;
+        grid-row-end:1;
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
+      .web-2 {
+        grid-row-start:2;
+        grid-row-end:2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .web-3 {
+        grid-row-start:3;
+        grid-row-end:3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .web-4 {
+        grid-row-start:4;
+        grid-row-end:4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .web-1 img,
+      .web-2 img,
+      .web-3 img,
+      .web-4 img {
+        height:350px;
+        margin-top: 500px;
+      }
+
+      .web-1,
+      .web-2,
+      .web-3,
+      .web-4 {
+        margin:150px;
+        text-align: left;
+      }
+
+      .web-1 p,
+      .web-2 p,
+      .web-3 p,
+      .web-4 p {
+        color:#6E5B48;
+        padding:25px;
+        font-size:24px;
+
       }
 }
 
