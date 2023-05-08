@@ -24,6 +24,7 @@ body {
 
     nav {
         display:flex;
+        padding-top:20px;
         flex-direction: row;
         justify-content: space-around;
         
@@ -402,6 +403,15 @@ body {
     width:1200px;
 }
 
+#write {
+    animation: scroller 2.5s linear infinite;
+}
+
+@keyframes scroller {
+    100% { 
+        transform: translateX(-125%); 
+    }
+}
 
 @keyframes scroll {
     100% { 
@@ -422,8 +432,13 @@ body {
     }
 
     #art img {
-        width:500px;
+        width:600px;
         height:400px;
+    }
+
+    #art-2 img {
+        width:500px;
+        height:500px;
     }
 
     .carousel {
@@ -463,5 +478,137 @@ body {
         justify-content: center;
         color:#6E5B48;
       }
+
+      .grid {
+        display:grid;
+        margin-bottom: 100px;
+        grid-template-rows: 300px auto 300px;
+        grid-template-columns: 20% 30% 30% 20%;
+      }
+
+      .grid img {
+        height:100px;
+      }
+
+
+      /* icon */
+      #grid1 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        text-align: center;
+      }
+
+      /* info */
+      #extragrid {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        text-align:left;
+        color:#6E5B48;
+      }
+
+      #extragrid h1 {
+        font-weight:400;
+        font-size:50px;
+      }
+
+      #extragrid h3 {
+        font-weight:300;
+        font-size:34px;
+        width:75%;
+      }
+
+      /* tetris */
+      #grid2 {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        background-repeat: no-repeat;
+        background-size:cover; 
+        border: 5px solid white;
+        border-radius: 20px;
+        margin:20px;
+        background-image: url(images/tetris.jpg);
+      }
+
+      /* vol */
+      #grid3 {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3; 
+        display:flex;
+        flex-direction: row;
+        text-align:center;
+        justify-content: space-around;
+      }
+
+      /* draw */
+      #grid4 {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4; 
+        flex-direction: row;
+        display:flex;
+        text-align:center;
+        justify-content: space-around;
+      }
+
+      /* game */
+      #grid7 {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4; 
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row;
+        text-align:center;
+      }
+
+      /* top 5 */
+      #grid5 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 4; 
+      }
+
+      #grid5 h3,
+      #grid5 li {
+        padding:15px;
+      }
+
+      /* PST */
+      #grid6 {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 4; 
+        flex-direction: row;
+        display:flex;
+        text-align:center;
+      }
+
+      #icon {
+        border-radius: 100%;
+        height:250px;
+        border: 5px solid white;
+      }
+
+      .cosmetic {
+        background-color: #EAAEB5;
+        border: 5px solid white;
+        border-radius: 20px;
+        margin:20px;
+        color:white;
+        font-size:30px;
+      }
 }
+
 
