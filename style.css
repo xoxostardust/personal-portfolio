@@ -12,12 +12,20 @@ body {
     font-weight:600;
 }
 
-#achievements {
-    height:100px;
-    overflow-y:auto;
-}
+
 
 @media (min-width:1024px) {
+    #achievements {
+        height:500px;
+        overflow-y:auto;
+        display:grid;
+        margin-bottom: 200px;
+    }
+
+    .achaward {
+        width:100%;
+    }
+
     .fox {
         height:100px;
     }
@@ -486,6 +494,8 @@ body {
         grid-template-columns: 20% 30% 30% 20%;
       }
 
+      
+
       .grid img {
         height:100px;
       }
@@ -531,8 +541,24 @@ body {
         background-size:cover; 
         border: 5px solid white;
         border-radius: 20px;
+        color:white;
         margin:20px;
-        background-image: url(images/tetris.jpg);
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color:#EAAEB5;
+      }
+
+      #grid2 img {
+        height:300px;
+        width:100%;
+      }
+
+      #grid2 p {
+        font-size:40px;
+        font-weight:600;
+        width:100%;
+        text-align:center;
       }
 
       /* vol */
@@ -608,6 +634,131 @@ body {
         margin:20px;
         color:white;
         font-size:30px;
+      }
+
+      .img {
+        height:100px;
+      }
+
+      .grid-2 {
+        /* display:grid; */
+        margin-bottom: 100px;
+        margin:25px;
+        grid-template-rows: 400px;
+        grid-template-columns: 20% 80%;
+        font-size:30px;
+      }
+
+      .grid-2 img {
+        height:100px;
+      }
+
+      .bold {
+        font-weight:600;
+        font-size:22px;
+      }
+
+      .scroll {
+        color:white;
+        list-style: none;
+        border: 4.5px solid white;
+        border-radius: 15px;
+        padding:10px;
+        background-color:#C77A80;
+      }
+
+      #g0 {
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color:white;
+        text-align:right;
+      }
+
+      #g1 {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+      }
+
+      #g2 {
+        grid-row-start:2;
+        grid-row-end:2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        
+      }
+
+      #g3 {
+        grid-row-start:3;
+        grid-row-end:3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      #g4 {
+        grid-row-start:3;
+        grid-row-end:3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      #g5 {
+        grid-row-start:4;
+        grid-row-end:4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      #g6 {
+        grid-row-start:4;
+        grid-row-end:4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      #g7 {
+        grid-row-start:5;
+        grid-row-end:5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      #g8 {
+        grid-row-start:5;
+        grid-row-end:5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      #g9 {
+        grid-row-start:6;
+        grid-row-end:6;
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      #g10 {
+        grid-row-start:6;
+        grid-row-end:6;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+     #g11 {
+        grid-row-start:7;
+        grid-row-end:7;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      } 
+
+      #g12 {
+        grid-row-start:7;
+        grid-row-end:7;
+        grid-column-start: 1;
+        grid-column-end: 2;
       }
 }
 
