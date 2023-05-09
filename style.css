@@ -141,6 +141,7 @@ body {
         border-left: 6px solid #6E5B48;
         height: 300px;
         width:5%;
+        justify-content: center;
         flex-direction: row;
         display:flex;
         align-self: center;
@@ -150,7 +151,10 @@ body {
    
 
     hr {
-        width:71.7%;
+        width:50%;
+        display:flex;
+        justify-content: center;
+        text-align:center;
         margin-top:0;
         margin-bottom:0;
         border:3px solid;
@@ -1248,6 +1252,42 @@ body {
         animation-iteration-count: 1;
         animation-name: slideInLeft;
       }
+
+      .original {
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-name: slideInLeft;
+      }
+
+      @keyframes text-animation {
+        0% {margin-top: 0;}
+        10% {margin-top: 0;}
+        20% {margin-top: -8em;}
+        30% {margin-top: -8em;}
+        40% {margin-top: -16em;}
+        50% {margin-top: -16em;}
+        60% {margin-top: -10.5em;}
+        70% {margin-top: -7em;}
+        80% {margin-top: -3.5em;}
+        90% {margin-top: -3.5em;}
+        95% {margin-top: 0;}
+        100% {margin-top: 0;}
+      }
+
+      .description div:first-child {
+        animation: text-animation 10s infinite;
+      }
+
+      .description {
+        text-align:left;
+        margin-top:1em;
+        margin-bottom:1em;
+        overflow:hidden;
+        height:8em;
+    }
+    
 }
 
 
