@@ -1261,16 +1261,19 @@ body {
         animation-name: slideInLeft;
       }
 
-      /* @keyframes text-animation {
-        0% {margin-top: 0;}
-        14%{margin-top: -10rem;}
-        28%{margin-top: -15rem;}
-        42%{margin-top: -20rem;}
-        56%{margin-top: -15rem;}
-        70%{margin-top: -10rem;}
-        84%{margin-top: 5rem;}
+      @keyframes text-animation {
+        0% {margin-top: -1em;}
+        11%{margin-top: -1em;}
+        22%{margin-top: -11em;}
+        33%{margin-top: -22em;}
+        44%{margin-top: -33em;}
+        55%{margin-top: -22em;}
+        66%{margin-top: -11em;}
+        77%{margin-top: -5em;}
+        88%{margin-top: 0;}
+        99%{margin-top: 0;}
         
-      } */
+      }
 
       .description div:first-child {
         animation: text-animation 20s infinite;
@@ -1278,8 +1281,8 @@ body {
 
       .description {
         text-align:left;
-        /* margin-top:5em;
-        margin-bottom:1em; */
+        margin-top:5em;
+        margin-bottom:1em;
         overflow:hidden;
         height:5em;
     }
