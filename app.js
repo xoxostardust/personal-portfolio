@@ -1,14 +1,14 @@
 function show() {
-    let middle = document.querySelectorAll(".middle")
+    let code = document.querySelectorAll(".code")
 
-    for (let i = 0; i < middle.length; i++) {
+    for (let i = 0; i < code.length; i++) {
         let windowHeight = window.innerHeight;
-        let elementTop = middle[i].getBoundingClientRect().top;
+        let elementTop = code[i].getBoundingClientRect().top;
         let elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
-            middle[i].classList.add("active");
+            code[i].classList.add("active");
           } else {
-            middle[i].classList.remove("active");
+            code[i].classList.remove("active");
           }
         }
       }

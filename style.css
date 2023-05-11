@@ -13,8 +13,17 @@ body {
     font-weight:600;
 }
 
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 
+/* computer query */
 @media (min-width:1024px) {
     #achievements {
         height:500px;
@@ -112,16 +121,21 @@ body {
         display:flex;
         flex-direction: column;
         align-items: center;
-        position:relative;
-        transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
+        
+        
         
     }
 
-    .middle.active {
+    .code {
+        transform: translateX(-150px);
+        opacity: 0;
+        position:relative;
+        transition: 1s all ease;
+    }
+
+    .code.active {
         transform: translateY(0);
-  opacity: 1;
+    opacity: 1;
     }
 
     .line-flex {
@@ -1236,14 +1250,7 @@ body {
         transform-origin: bottom left;
       }
 
-      @keyframes slideInLeft {
-        0% {
-          transform: translateX(-100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
+      
 
       nav {
         animation-duration: 2s;
@@ -1287,4 +1294,133 @@ body {
     
 }
 
+/* phone query */
+@media (max-width:1024px) {
+    nav {
+        width:100%;
+        display:flex;
+        padding-top:0.2em;
+        margin-bottom:1em;
+        flex-direction: row;
+        justify-content: space-around;
+        animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+    }
 
+    nav img {
+        height:5em;
+        width:100%;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #6E5B48;
+        font-weight: 500;
+        font-size:10px;
+}
+
+.original {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.dropdown {
+    display: none;
+    text-align: left;
+    position: absolute;
+    font-size: 20px;
+    border: 5px solid white;
+    border-radius: 25px;
+    list-style: none;
+    min-width: 160px;
+    z-index: 1;
+}
+
+img {
+    width:100px;
+}
+
+.original {
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+.header-flex {
+    padding-left:1.5em;
+}
+
+.header-flex h1 {
+    color: #6E5B48;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.header-flex h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #6E5B48;
+}
+
+.description {
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    height: 3em;
+}
+
+
+@keyframes text-animation {
+    0% {margin-top: 0;}
+    12.5%{margin-top: 0;}
+    25%{margin-top: -2.5em;}
+    37.5%{margin-top: -4.5em;}
+    50%{margin-top: -6.5em;}
+    62.5%{margin-top: -4.5em;}
+    75%{margin-top: -2.5em;}
+    87.5%{margin-top: 0;}
+    100%{margin-top: 0;}
+  }
+
+  .description div:first-child {
+    animation: text-animation 20s infinite;
+  }
+
+  .thirds {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #6E5B48;
+    background: rgb(241,158,160);
+    background: linear-gradient(180deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 100%);
+}
+
+    .thirds h3 {
+        font-weight:500;
+    }
+
+    .code.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .thirds > h3 {
+        display: inline-block;
+    }
+
+    .code {
+        transform: translateX(-150px);
+        opacity: 0;
+        position: relative;
+        transition: 1s all ease;
+    }
+}
