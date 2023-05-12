@@ -31,7 +31,8 @@ body {
         display:grid;
         margin-bottom: 200px;
     }
-    
+
+  
     .achaward {
         width:100%;
     }
@@ -146,8 +147,34 @@ body {
         display:flex;
         flex-direction: row;
         width:100%;
-        justify-content: space-around;
+        justify-content: center;
 
+    }
+
+    .line-1 {
+      width:50%;
+      height:300px;
+      border-right:3px solid #6E5B48;
+      border-left:6px solid #6E5B48;
+    }
+
+    .line-2 {
+      width:50%;
+      height:300px;
+      border-left:3px solid #6E5B48;
+      border-right:6px solid #6E5B48;
+    }
+
+    .line-3 {
+      width:50%;
+      border-right:3px solid #6E5B48;
+      height:300px;
+    }
+
+    .line-4 {
+      width:50%;
+      height:300px;
+      border-left:3px solid #6E5B48;
     }
 
      #special {
@@ -155,7 +182,7 @@ body {
         margin-top:0;
     }
 
-    .line {
+    /* .line {
         border-left: 6px solid #6E5B48;
         height: 300px;
         width:5%;
@@ -164,12 +191,12 @@ body {
         display:flex;
         align-self: center;
         margin-bottom:0;
-    }
+    } */
 
    
 
-    hr {
-        width:50%;
+    /* hr {
+        width:80%;
         display:flex;
         justify-content: center;
         text-align:center;
@@ -178,7 +205,7 @@ body {
         border:3px solid;
         color:#6E5B48;
 
-    }
+    } */
 
     .thirds {
         width:100%;
@@ -186,6 +213,7 @@ body {
         justify-content: space-around;
         /* justify-content: space-between; */
         font-size:60px;
+        text-align: center;
         color:#6E5B48;
         background: rgb(241,158,160);
     background: linear-gradient(180deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 100%);
@@ -1930,16 +1958,19 @@ background: linear-gradient(90deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 
             }
         
             .left-content {
-                width:50%;
+                width:95%;
+                text-align:left;
+                margin-left:40px;
                 color:#6E5B48;
                 font-size:18px;
-                padding-left:15px;
+                
             }
         
             .right-content {
-                width:75%;
+                width:85%;
                 background-color: #F6DDE0;
                 display:flex;
+                margin-left:40px;
                 flex-direction: column;
                 justify-content: center;
             }
