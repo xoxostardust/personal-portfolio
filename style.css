@@ -1925,21 +1925,23 @@ background: linear-gradient(90deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 
 
               .contact-form {
                 display:flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: space-around;
             }
         
             .left-content {
                 width:50%;
                 color:#6E5B48;
-                font-size:26px;
+                font-size:18px;
+                padding-left:15px;
             }
         
             .right-content {
-                width:25%;
+                width:75%;
                 background-color: #F6DDE0;
                 display:flex;
                 flex-direction: column;
+                justify-content: center;
             }
         
             .name,
@@ -1966,17 +1968,19 @@ background: linear-gradient(90deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 
             }
         
             .socials a {
-                margin-top: 100px;
+                margin-top: 10px;
+                margin-bottom:4em;
             }
         
             .socials img {
-                max-width:100%;
-                height: 200px;
+                height: 5em;
             }
         
             .socials {
                 display:flex;
-                justify-content: space-around;
+                justify-content: space-between;
+                flex-direction: row;
+                width:100%;
             }
         
             #submit p {
