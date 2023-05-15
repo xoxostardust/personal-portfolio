@@ -1429,8 +1429,6 @@ body {
 
     nav img {
         height:4rem;
-        width:100%;
-        
     }
 
     nav a {
@@ -1797,7 +1795,7 @@ background: linear-gradient(90deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 
 
     .letters img {
         text-align:center;
-        width:80%;
+        /* width:80%; */
         height:25rem;
     }
 
@@ -2433,5 +2431,115 @@ background: linear-gradient(90deg, rgba(241,158,160,1) 41%, rgba(246,221,224,1) 
       padding:5px;
       color:#6E5B48;
       font-size:18px;
+    }
+
+    .web-grid {
+      display:grid;
+      /* margin-top:150px; */
+      width:100%;
+      margin-top:200px;
+      grid-template-rows: 400px;
+      grid-template-columns: 25% 75%;
+    }
+
+    .web-1 img, .web-2 img, .web-3 img, .web-4 img {
+      width:75%;
+  }
+
+    #w1 {
+      grid-row-start:1;
+      grid-row-end:1;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    .heart-divider {
+      grid-row-start:1;
+      display:flex;
+      justify-content: center;
+      /* width:15%; */
+      margin-left:30px;
+      grid-row-end:9;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      border-right: 5px solid #000000;
+      height: 1000px;
+      width: 1%;
+      height:100%;
+    }
+
+    .heart-divider img {
+      height:50px;
+      position:fixed;
+      margin-left:8px;
+    }
+
+    #w5 {
+      grid-row-start:2;
+      grid-row-end:2;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      margin-top:500px;
+      
+    }
+
+    #w8 {
+      grid-row-start:3;
+      grid-row-end:3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    #w11 {
+      grid-row-start:4;
+      grid-row-end:4;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    .divider {
+      background-color: #EAAEB5;
+      border: 5px solid white;
+      border-radius: 20px;
+      color: white;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 25px;
+      font-size: 26px;
+    }
+
+    .eng img,
+    .eng-1 img {
+      height:400px;
+      padding:20px;
+      margin-left:10px;
+    }
+
+    .eng,
+    .eng-1 {
+      display:flex;
+      line-height:120%;
+      justify-content: center;
+      width:100%;
+      flex-direction: column;
+      text-align: justify;
+    }
+
+    .eng-1 a,
+    .eng a {
+      text-decoration: none;
+    }
+
+    .eng p,
+    .eng h2,
+    .eng-1 p,
+    .eng-1 h2 {
+      color:#6E5B48;
+      padding:15px;
+
     }
 }
